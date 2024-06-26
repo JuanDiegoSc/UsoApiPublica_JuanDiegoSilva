@@ -8,6 +8,5 @@ public partial class ApodPageJDS : ContentPage
 	{
 		InitializeComponent();
         BindingContext = new ApodViewModelJDS();
-
     }
 }

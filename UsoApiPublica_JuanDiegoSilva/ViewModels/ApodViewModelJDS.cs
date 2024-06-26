@@ -10,7 +10,7 @@ using UsoApiPublica_JuanDiegoSilva.Services;
 
 namespace UsoApiPublica_JuanDiegoSilva.ViewModels
 {
-    public class ApodViewModelJDS
+    public class ApodViewModelJDS : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")

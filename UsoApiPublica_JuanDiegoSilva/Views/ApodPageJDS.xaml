@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UsoApiPublica_JuanDiegoSilva.Views.ApodPageJDS"
+             BackgroundColor="DarkGray"
              Title="ApodPageJDS">
     <ContentPage.Content>
         <StackLayout>
@@ -14,28 +15,28 @@
                          FontSize="Large"/>
             </Frame>
             <Label Text="Seleccione la fecha:" FontSize="Small" HorizontalOptions="Center"
-                    TextColor="GhostWhite"/>
-            <DatePicker x:Name="ImageDate"
+                    TextColor="White"/>
+            <DatePicker x:Name="ImageDate_JDS"
                          Date="{Binding ChosenDate_JDS}"
                          HorizontalOptions="CenterAndExpand"
-                         TextColor="GhostWhite"/>
-            <Label x:Name="Title"
+                         TextColor="white"/>
+            <Label x:Name="Title_JDS"
                      Text="{Binding Title_JDS}"
                      FontSize="Medium"
                      FontAttributes="Bold"
                      HorizontalTextAlignment="Center"
                      HorizontalOptions="CenterAndExpand"
-                     TextColor="GhostWhite"/>
+                     TextColor="White"/>
             <ScrollView VerticalOptions="StartAndExpand">
                 <StackLayout Margin="40,15,40,50">
-                    <Image x:Name="Picture"
+                    <Image x:Name="Picture_JDS"
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="FillAndExpand"
                              Source="{Binding ImageURI_JDS}"/>
-                    <Label x:Name="Didactic"
+                    <Label x:Name="Didactic_JDS"
                              Text="{Binding Didactic_JDS}"
                              HorizontalOptions="FillAndExpand"
-                             TextColor="GhostWhite"
+                             TextColor="White"
                              Padding="5, 20, 5, 20"
                              FontFamily="verdana"/>
                 </StackLayout>

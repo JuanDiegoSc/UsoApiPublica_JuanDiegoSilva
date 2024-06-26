@@ -12,16 +12,15 @@ namespace UsoApiPublica_JuanDiegoSilva.Services
     {
         public async Task<ApodJDS> GetImage_JDS(DateTime dt)
         {
+
             ApodJDS dto = null;
             HttpResponseMessage response;
-            string requestUrl = $"https://api.nasa.gov/planetary/apod?date={dt.ToString("yyyy MMdd")}&api_key= eECk6iuObvyAmoPtQrsAV3fx4O1fpAtx6isgf6fI";
+            string requestUrl = $"https://api.nasa.gov/planetary/apod?date={dt.ToString("yyyy-MM-dd")}&api_key=eECk6iuObvyAmoPtQrsAV3fx4O1fpAtx6isgf6fI";
             try
             {
-
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, requestUrl);
                 HttpClient client = new HttpClient();
                 response = await client.SendAsync(request);
-
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     string json = await response.Content.ReadAsStringAsync();
@@ -34,7 +33,6 @@ namespace UsoApiPublica_JuanDiegoSilva.Services
                 throw;
             }
             return dto;
-
         }
     }
 }
