@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UsoApiPublica_JuanDiegoSilva.Models;
-using Windows.Media.Protection.PlayReady;
 
 namespace UsoApiPublica_JuanDiegoSilva.Services
 {
